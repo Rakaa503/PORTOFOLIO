@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rakha Avilla Azmy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body { background:#0b0b0b; }
+
+/* horizontal scroll */
+.scroll {
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+}
+.scroll::-webkit-scrollbar { display:none; }
+
+/* card */
+.card {
+  min-width:200px;
+  background:#1a1a1a;
+  padding:15px;
+  border-radius:10px;
+  transition:0.3s;
+}
+.card:hover {
+  transform:scale(1.08);
+}
+
+/* fade */
+.fade {opacity:0; transform:translateY(30px); transition:0.8s;}
+.fade.show {opacity:1; transform:translateY(0);}
+
+/* kereta animation */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+</style>
+
+</head>
+
+<body class="text-white font-serif">
+
+<!-- NAV -->
+<nav class="flex justify-between p-5 fixed w-full bg-black/80 z-50">
+  <h1 class="text-red-600 font-bold text-xl">RAKHA</h1>
+  <button onclick="scrollToTop()">⬆</button>
+</nav>
+
+<!-- HERO -->
+<header class="h-screen flex flex-col justify-center px-10"
+style="background: linear-gradient(to top, #0b0b0b, transparent), url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') center/cover;">
+
+<h1 class="text-5xl font-bold mb-4">Rakha Avilla Azmy</h1>
+<p class="max-w-lg text-gray-300">
+Aspiring Software Developer specializing in Mobile and Web Development
+Informatics Engineering student passionate about building applications and learning modern technologies.
+</p>
+
+</header>
+
+<!-- ABOUT -->
+<section class="px-10 py-20 fade">
+<h2 class="text-2xl mb-5">About Me</h2>
+<p class="text-gray-400 leading-relaxed">
+ currently in my fourth semester with a strong passion for technology, software development, and data analysis. I am highly motivated to continuously learn, improve my skills, and build impactful digital solutions that can solve real-world problems.
+
+In mobile development, I have experience working with technologies such as Java, Kotlin, Flutter, and React Native. I enjoy creating user-friendly and efficient mobile applications, focusing on performance, clean code, and intuitive user interfaces. I am particularly interested in building cross-platform applications that can reach a wider audience while maintaining high quality and scalability.
+
+In web development, I am skilled in HTML, CSS, JavaScript, and backend technologies such as PHP and Node.js. I have built several web-based projects, including systems for rental services and other functional applications. I focus on creating responsive, modern, and user-centered designs while ensuring the functionality is reliable and optimized.
+
+In addition to development, I also have a strong interest in data analysis, especially using Microsoft Excel. I am قادر to process, analyze, and visualize data using formulas, pivot tables, and data organization techniques. I enjoy turning raw data into meaningful insights that can support decision-making and improve efficiency.
+
+I am a disciplined, adaptable, and detail-oriented individual who is always eager to face new challenges. My goal is to grow as a professional developer and contribute to innovative projects in the technology industry.
+</p>
+</p>
+</section>
+
+<!-- EDUCATION -->
+<section class="px-10 py-10 fade">
+<h2 class="text-2xl mb-5">Education</h2>
+
+<div class="scroll">
+
+<div class="card">
+<h3>2024 - Present</h3>
+<p class="text-gray-400">Mandala Institute of Technology</p>
+</div>
+
+<div class="card">
+<h3>2021 - 2024</h3>
+<p class="text-gray-400">SMAN 2 Padalarang</p>
+</div>
+
+</div>
+</section>
+
+<!-- TOOLS -->
+<section class="px-10 py-20 fade">
+<h2 class="text-2xl mb-5">Tools & Skills</h2>
+
+<div class="overflow-x-auto">
+<table class="w-full border border-gray-700 text-sm">
+
+<thead class="bg-red-600">
+<tr>
+<th class="p-3 text-left">Category</th>
+<th class="p-3 text-left">Tools</th>
+</tr>
+</thead>
+
+<tbody class="bg-gray-900">
+
+<tr class="border-b border-gray-700">
+<td class="p-3">📱 Mobile</td>
+<td class="p-3 flex flex-wrap gap-4">
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="w-6"> Java
+</div>
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="w-6"> Kotlin
+</div>
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-6"> Flutter
+</div>
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-6"> React Native
+</div>
+
+</td>
+</tr>
+
+<tr class="border-b border-gray-700">
+<td class="p-3">🌐 Web</td>
+<td class="p-3 flex flex-wrap gap-4">
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="w-6"> HTML
+</div>
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="w-6"> CSS
+</div>
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="w-6"> JavaScript
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="p-3">📊 Data</td>
+<td class="p-3 flex gap-4">
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="w-6"> Python
+</div>
+
+<div class="flex items-center gap-2">
+<img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" class="w-6"> SQL
+</div>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- PROJECT -->
+<section class="px-10 py-20 fade">
+<h2 class="text-2xl mb-5">Projects</h2>
+
+<div class="scroll">
+
+<div class="card">
+<h3>📦 Tracking App</h3>
+<p class="text-gray-400">Visual Basic package tracking</p>
+</div>
+
+<div class="card">
+<h3>🎮 Rental Web</h3>
+<p class="text-gray-400">PlayStation rental system</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT & COLABORATION(KERETA + LOGO + GITHUB) -->
+<section class="px-10 py-20 fade">
+<h2 class="text-2xl mb-5">Contact</h2>
+
+<div class="overflow-hidden">
+
+<div class="flex gap-10 animate-marquee items-center">
+
+<a href="mailto:ervawanr@gmail.com" class="card flex items-center gap-3">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-8">
+Email
+</a>
+
+<a href="https://wa.me/6283872394590" class="card flex items-center gap-3">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="w-8">
+WhatsApp
+</a>
+
+<a href="https://instagram.com/rakhaavillarn" class="card flex items-center gap-3">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" class="w-8">
+Instagram
+</a>
+
+<a href="https://id.linkedin.com/in/rakha-avilla-azmy-a17281373" class="card flex items-center gap-3">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" class="w-8">
+LinkedIn
+</a>
+
+<a href="https://github.com/Rakaa503" class="card flex items-center gap-3">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-8">
+GitHub
+</a>
+
+</div>
+
+</div>
+</section>
+
+<script>
+function scrollToTop(){
+  window.scrollTo({top:0, behavior:"smooth"})
+}
+
+const fades=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+  fades.forEach(el=>{
+    if(el.getBoundingClientRect().top < window.innerHeight-100){
+      el.classList.add('show')
+    }
+  })
+})
+</script>
+
+</body>
+</html>
